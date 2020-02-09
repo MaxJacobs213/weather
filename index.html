@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="pa-3">
+    <div class="main-box px-3">
+      <h1 class="main-box__title text-center ma-5">Weather list:</h1>
+      <div
+        id="actionsPanel"
+        class="actions-panel row justify-between ml-6"
+      >
+        <div class="actions-panel__view row justify-around">
+          <button
+            id="tilesAction"
+            class="actions-panel__tiles-action icon"
+          ></button>
+          <button
+            id="rowsAction"
+            class="actions-panel__rows-action icon"
+          ></button>
+        </div>
+        <div class="actions-panel__sort row justify-around">
+          <button
+            id="textSortAction"
+            class="actions-panel__text-sort-action icon"
+          ></button>
+          <button
+            id="tempUpSortAction"
+            class="actions-panel__sort-temp-up-action icon"
+          ></button>
+          <button
+            id="tempDownSortAction"
+            class="actions-panel__sort-temp-down-action icon"
+          ></button>
+        </div>
+      </div>
+      <div
+        id="weatherCardList"
+        class="weather-cards-box row justify-around"
+      ></div>
+    </div>
+
+    <script src="js/utils/collectionUtils.js"></script>
+    <script src="js/utils/domUtils.js"></script>
+    <script src="js/utils/otherUtils.js"></script>
+    <script src="js/components/WeatherCardList.js"></script>
+    <script src="js/components/ActionsPanel.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
